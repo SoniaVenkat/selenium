@@ -9,7 +9,7 @@ public class FormInuputs {
 		WebDriver driver = new ChromeDriver();
 		System.getProperty("webdriver.chrome.driver","G:\\Selenium\\chromedriver.exe");
 		driver.get("https://www.jotform.com/form-templates/test");
-		driver.manage().window().maximize();
+		
 	}
 
 }
