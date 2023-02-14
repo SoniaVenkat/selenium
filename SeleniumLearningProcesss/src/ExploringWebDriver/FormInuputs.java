@@ -1,5 +1,7 @@
 package ExploringWebDriver;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -39,7 +41,15 @@ public class FormInuputs {
 		
 		//Drop-down
 		Select drpCountry = new Select(driver.findElement(By.name("q4_billingAddress[country]")));
-		drpCountry.selectByVisibleText("India");
+		drpCountry.selectByValue("India");
+		 
+		// Display All Values in drop- down
+		List <WebElement> op = drpCountry.getOptions();
+	      int size = op.size();
+	      for(int i =0; i<size ; i++){
+	         String options = op.get(i).getText();
+	         System.out.println(options);
+	      }
 	
 		
 	}
