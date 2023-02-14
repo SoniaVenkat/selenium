@@ -1,6 +1,10 @@
 package ExploringWebDriver;
 
+import java.awt.Point;
+import java.awt.image.BufferedImage;
 import java.io.File;
+
+import javax.imageio.ImageIO;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -39,6 +43,8 @@ public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws 
 
             File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
 
+         //BufferedImage bufferedImage = ImageIO.read(SrcFile);
+            
         //Move image file to new destination
 
             File DestFile=new File(fileWithPath);
@@ -48,4 +54,6 @@ public static void takeSnapShot(WebDriver webdriver,String fileWithPath) throws 
             FileUtils.copyFile(SrcFile, DestFile);
 
 }
+
+
 }

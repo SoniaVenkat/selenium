@@ -20,6 +20,9 @@ public class Full_screenshot {
 		System.setProperty("webdriver.chrome.driver", "G:\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/");
+		
+		//Using robot class taking full page screenshots
+		
 		 Robot robot = new Robot();
 	     Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 	     Rectangle rectangle= new Rectangle(screenSize);
