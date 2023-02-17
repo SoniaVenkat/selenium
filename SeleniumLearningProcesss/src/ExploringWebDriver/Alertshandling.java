@@ -23,10 +23,12 @@ public class Alertshandling {
 		cancel_alert.click();
 		driver.switchTo().alert().dismiss();
 		
-		//Alert with text
-		WebElement text_alert =driver.findElement(By.xpath("//div[@id=\"Textbox\"]/button"));
-		text_alert.click();
+//		//Alert with text
+
+		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ul/li[3]/a")).click();
+		driver.findElement(By.xpath("//div[@id=\"Textbox\"]/button")).click();
 		driver.switchTo().alert().sendKeys("Text testing");
-	}
+		driver.switchTo().alert().accept();
+		}
 
 }
