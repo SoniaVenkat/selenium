@@ -21,7 +21,5 @@ public class File_upload_download {
 		download.click();
 		WebElement buttton =driver.findElement(By.className("download-button"));
 		buttton.click();
-		
-		
 		}
 }
