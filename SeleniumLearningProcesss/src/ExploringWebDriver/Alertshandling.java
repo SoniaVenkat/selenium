@@ -1,5 +1,6 @@
 package ExploringWebDriver;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,19 +17,20 @@ public class Alertshandling {
 		//Ok_button
 		WebElement ok_alert =driver.findElement(By.xpath("//div[@id=\"OKTab\"]/button"));
 		ok_alert.click();
-		driver.switchTo().alert().accept();
+		Alert alert= driver.switchTo().alert();
+		alert.accept();
 		
 		//Cancel_button
 		WebElement cancel_alert =driver.findElement(By.xpath("//div[@id=\"CancelTab\"]/button"));
 		cancel_alert.click();
-		driver.switchTo().alert().dismiss();
+		alert.dismiss();
 		
 //		//Alert with text
 
 		driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div[1]/ul/li[3]/a")).click();
 		driver.findElement(By.xpath("//div[@id=\"Textbox\"]/button")).click();
-		driver.switchTo().alert().sendKeys("Text testing");
-		driver.switchTo().alert().accept();
+		alert.sendKeys("Text testing");
+		alert.accept();
 		}
 
 }
