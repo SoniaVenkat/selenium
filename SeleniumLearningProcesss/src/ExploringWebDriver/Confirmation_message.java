@@ -5,7 +5,7 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-
+import org.junit.Assert;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -59,5 +59,12 @@ public class Confirmation_message {
 	        /* Copy the Screenshot file directory */
 	        File destination = new File("G:\\Projects Screenshot\\Confirmation_message.png");
 	        FileUtils.copyFile(source, destination);
+	        
+	        
+	        //Content in confirmation message
+	        WebElement msg=driver.findElement(By.className("ui-messages-info"));
+	        String text=msg.getText();
+	        String expectedText = "InfoMessage Detail";
+	        Assert.assertEquals(text,expectedText);
 	}
 }
