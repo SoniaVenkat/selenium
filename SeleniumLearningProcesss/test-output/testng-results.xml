@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-28T16:34:13 IST" name="Default suite" finished-at="2023-02-28T16:34:45 IST" duration-ms="31782">
+    <groups>
+    </groups>
+    <test started-at="2023-02-28T16:34:13 IST" name="Default test" finished-at="2023-02-28T16:34:45 IST" duration-ms="31782">
+      <class name="Selenium.Video_report">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Selenium.Video_report@4b0b0854]" started-at="2023-02-28T16:34:13 IST" name="setup" finished-at="2023-02-28T16:34:16 IST" duration-ms="2563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="getAppURL()[pri:0, instance:Selenium.Video_report@4b0b0854]" started-at="2023-02-28T16:34:16 IST" name="getAppURL" finished-at="2023-02-28T16:34:42 IST" duration-ms="26661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAppURL -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:Selenium.Video_report@4b0b0854]" started-at="2023-02-28T16:34:43 IST" name="Close" finished-at="2023-02-28T16:34:45 IST" duration-ms="2508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close -->
+      </class> <!-- Selenium.Video_report -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -25,7 +25,7 @@ public class Confirmation_message {
 		  //
 		  driver.manage().window().maximize();
 		  
-		  WebElement info_message= driver.findElement(By.xpath("//button[@id=\"j_idt89:j_idt90\"]"));
+		  WebElement info_message= driver.findElement(By.xpath("//button[@id=\"j_idt89:j_idt92\"]"));
 		  info_message.click();
 		  
 		  //Element to be captured
@@ -57,14 +57,14 @@ public class Confirmation_message {
 	        ImageIO.write(croppedImage, "png", source);
 
 	        /* Copy the Screenshot file directory */
-	        File destination = new File("G:\\Projects Screenshot\\Confirmation_message.png");
+	        File destination = new File("G:\\Projects Screenshot\\Confirmation_message1.png");
 	        FileUtils.copyFile(source, destination);
 	        
 	        
 	        //Content in confirmation message
-	        WebElement msg=driver.findElement(By.className("ui-messages-info"));
+	        WebElement msg=driver.findElement(By.className("ui-messages-error"));
 	        String text=msg.getText();
-	        String expectedText = "InfoMessage Detail";
+	        String expectedText = "ErrorMessage Detail";
 	        Assert.assertEquals(text,expectedText);
 	}
 }
